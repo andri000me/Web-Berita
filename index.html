@@ -1,222 +1,166 @@
 <html>
     <head>
-        <title>MEMBUAT CV SAYA</title>
-        <!-- external -->
-        <link rel="stylesheet" href="css/luar.css">
-        <!-- internal -->
+        <title>BELAJAR BOOTSTRAP</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
         <style>
-            *{
-                padding: 0px;
-                margin: 0px;
-                
-            }
+          footer{
+            background-color: #4aad84;
+            position: relative;
+            margin-top: 100%;
+            color: white;
+          }
 
-            body{
-                background-color:grey;
-            }
-
-            h1{
-                color: white;
-                background-color: cadetblue;
-                text-align: center;
-                padding: 60px;
-            }
-
-            ul,li{
-                font-size: 30px;
-            }
-
-            li:first-child{
-                color: white;
-            }
-            li:nth-child(2){
-                color: chartreuse;
-            }
-            li:nth-child(3){
-                color: darkgoldenrod;
-            }
-            li:nth-child(4){
-                color: rgb(231, 28, 197);
-            }
-            
-            li:last-child{
-                color: crimson;
-            }
-
-            /* label */
-            .contact{
-                font-size: 20px;
-                background-color: white;
-                position: relative;
-                top: -1391px;
-                right: 139px;
-                z-index: 10;
-                border-radius: 6px;
-                padding: 3px;
-                padding-left: 35px;
-                padding-right: 38px;
-            }
-
-            .list-contact{
-                font-size: 14px;
-                position: relative;
-                top: -1366px;
-                right: -113px;
-                z-index: 10;
-                /* background-color: #053335; */
-                color: white;
-                padding-right: 105px;
-            }
-
-            .language{
-                font-size: 20px;
-                background-color: white;
-                position: relative;
-                top: -1166px;
-                right: 276px;
-                z-index: 99999;
-                border-radius: 6px;
-                padding: 3px;
-                padding-left: 35px;
-                padding-right: 20px;
-            }
-
-            .list-language{
-                font-size: 14px;
-                position: relative;
-                top: -1204px;
-                right: -113px;
-                z-index: 10;
-                /* background-color: #053335; */
-                color: white;
-                padding-right: 105px;
-            }
-
-            .skill{
-                font-size: 20px;
-                background-color: white;
-                position: relative;
-                top: -1005px;
-                right: 393px;
-                z-index: 99999;
-                border-radius: 6px;
-                padding: 3px;
-                padding-left: 35px;
-                padding-right: 38px;
-            }
-            .hobby{
-                font-size: 20px;
-                background-color: white;
-                position: relative;
-                top: -838px;
-                right: 487px;
-                z-index: 99999;
-                border-radius: 6px;
-                padding: 3px;
-                padding-left: 35px;
-                padding-right: 38px;
-            }
-
-            /* kotak */
-            #facebook{
-                width: 50px;
-            }
-
-            #facebook:hover{
-                width: 100px;
-
-            }
-
-            .foto-diri{
-                left: 90px;
-                padding: 0;
-                margin: 0;
-                background-color: rgb(5, 51, 53);
-                position: relative;
-                top: -157px;
-                padding-top: 53px;
-                padding-bottom: 100%;
-                padding-left: 10px;
-                padding-right: 10px;
-                z-index: 9;
-            }
-
-            table{
-                font-size: 20px;
-                color: white;
-                margin: 20px 30px;
-                position: relative;
-                bottom: 1692px;
-                left: 589px;
-            }
-
-            footer{
-                background-color: rgb(5, 51, 53);
-                padding: 30px;
-
-            }
-
-
+          footer ul li a{
+            text-decoration: none;
+            color: white;
+          }
 
         </style>
     </head>
 <body>
-    <!-- judul -->
-    <h1>CV RAHMAD ADE AKBAR</h1>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: cadetblue;">
+        <a class="navbar-brand" href="#">WEB BERITA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    <!--tutup nav-->
 
-    <img class="foto-diri" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/1200px-Circle-icons-computer.svg.png" alt="" width="200px">
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Very long link 1</a>
+              </li>
+              <li>
+                <a href="#!">Very long link 2</a>
+              </li>
+              <li>
+                <a href="#!">Very long link 3</a>
+              </li>
+              <li>
+                <a href="#!">Very long link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
 
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+          <hr class="clearfix w-100 d-md-none">
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
 
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3" style="background-color: cadetblue;">© 2020 Copyright -
+        <a href="https://mdbootstrap.com/" style="color: white; text-decoration: none;"> Pemrograman Web BLK Banda Aceh</a>
+      </div>
+      <!-- Copyright -->
 
-    <!-- list -->
-    <label class="contact">Contact</label>
-    <label class="language">Language</label>
-    <label class="skill">Skill</label>
-    <label class="hobby">Hobby</label>
-
-    <h2 class="list-contact">Nama : Rahmad Ade Akbar</h2>
-    <h2 class="list-contact">Nama : Rahmad Ade Akbar</h2>
-    <h2 class="list-contact">Nama : Rahmad Ade Akbar</h2>
-    <h2 class="list-contact">Nama : Rahmad Ade Akbar</h2>
-
-    <h2 class="list-language">Nama : Rahmad Ade Akbar</h2>
-    <h2 class="list-language">Nama : Rahmad Ade Akbar</h2>
-    <h2 class="list-language">Nama : Rahmad Ade Akbar</h2>
-    <h2 class="list-language">Nama : Rahmad Ade Akbar</h2>
-
-    
-    <!-- <ul>
-        <li>LIST PERTAMA</li>
-        <li>LIST KEDUA</li>
-        <li>LIST KETIGA</li>
-        <li>LIST KEEMPAT</li>
-        <li>LIST KELIMA</li>
-    </ul> -->
-
-    <!-- colspan -->
-    <table>
-        <tr>
-            <td>Nama</td>
-            <td>: Rahmad Ade Akbar</td>
-        </tr> 
-        <tr>
-            <td>Alamat</td>
-            <td>: Punge Blang Cut</td>
-        </tr> 
-        <tr>
-            <td>BUDI</td>
-        </tr> 
-        
-        
-    </table>
-
-  
-    <!-- KOTAK -->
-   
-
-    <footer>
-        <a href="https://www.facebook.com" target="blank"><img id="facebook" src="https://img.icons8.com/plasticine/2x/facebook-new.png" alt=""></a>
     </footer>
+    <!-- tutup Footer -->
 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
